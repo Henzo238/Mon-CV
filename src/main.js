@@ -6,10 +6,10 @@ import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faGithub, faChevronCircleDown)
+library.add(faGithub, faChevronCircleDown, faLinkedin)
 
 const app = createApp(App)
 
