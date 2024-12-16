@@ -10,7 +10,7 @@ const handleClick = () => {
   <div class="scroll-background">
     <section>
       <h1>Henzo Goncalves</h1>
-      <h2>Développeur Web Junior</h2>
+      <h2>Développeur Web Fullstack Junior</h2>
 
       <span>
         <font-awesome-icon :icon="['fas', 'chevron-circle-down']" @click="handleClick" />
