@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import { RouterLink, useRouter } from 'vue-router'
+const router = useRouter()
+</script>
 
 <template>
   <section>
@@ -45,10 +48,7 @@ img {
   box-shadow: 5px -5px 30px rgb(180, 237, 183);
   opacity: 0.7;
 }
-section {
-  margin-top: 300px;
-  scroll-snap-type: y mandatory;
-}
+
 div {
   /* border: 2px solid black; */
   padding: 10px;

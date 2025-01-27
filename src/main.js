@@ -7,9 +7,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronCircleDown, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faGithub, faChevronCircleDown, faLinkedin)
+library.add(faGithub, faChevronCircleDown, faLinkedin, faEnvelope)
 
 const app = createApp(App)
 

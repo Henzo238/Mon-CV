@@ -1,5 +1,7 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { useRouter } from 'vue-router'
+const router = useRouter()
 </script>
 
 <template>
@@ -12,6 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
       <a href="https://github.com/Henzo238" target="_blank">
         <font-awesome-icon :icon="['fab', 'github']"
       /></a>
+      <a href="mailto:henzo.g@hotmail.fr"> <font-awesome-icon :icon="['fas', 'envelope']" /></a>
     </div>
   </section>
 </template>

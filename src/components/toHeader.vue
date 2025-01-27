@@ -1,67 +1,51 @@
-<script setup>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-const handleClick = () => {
-  window.scrollTo({ top: 1700, behavior: 'smooth' })
-}
-</script>
+<script></script>
 
 <template>
-  <div class="scroll-background">
-    <section>
-      <h1>Henzo Goncalves</h1>
-      <h2>Développeur Web Fullstack Junior</h2>
-
-      <span>
-        <font-awesome-icon :icon="['fas', 'chevron-circle-down']" @click="handleClick" />
-      </span>
-    </section>
-  </div>
+  <header>
+    <nav>
+      <RouterLink :to="{ name: 'home' }"> Accueil </RouterLink>
+      <RouterLink :to="{ name: 'formation' }"> Formation </RouterLink>
+      <RouterLink :to="{ name: 'experiences' }"> Expériences </RouterLink>
+      <RouterLink :to="{ name: 'competences' }"> Compétences </RouterLink>
+      <RouterLink :to="{ name: 'contact' }"> Contact </RouterLink>
+    </nav>
+  </header>
 </template>
 
 <style scoped>
-h1,
-h2 {
-  animation-duration: 2s;
-  animation-name: slidein;
-}
-h2 {
-  padding-bottom: 100px;
-}
-
-@keyframes slidein {
-  from {
-    margin-right: 20%;
-    width: 50%;
-  }
-  to {
-    margin-left: 0%;
-    width: 50%;
-  }
-}
-.scroll-background {
-  height: 170vh;
-  background: linear-gradient(rgb(0, 15, 0) 70%, rgb(64, 117, 62));
-}
-section {
+header {
   position: sticky;
-  top: 0px;
+  width: 60%;
+  margin: 0 auto;
 }
-svg {
-  color: rgb(180, 237, 183);
-  border: 1px solid rgb(180, 237, 183);
-  border-radius: 50px;
-  padding: 5px;
-  font-size: 50px;
-}
-svg:hover {
-  font-size: 55px;
-  box-shadow: 0 0 50px 5px rgb(180, 237, 183);
-  transition: width 0.5s;
-}
-span {
+nav {
+  /* padding: 20px 40px 20px 40px; */
+  height: 60px;
+  width: 950px;
+  margin-top: 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: start;
+  border: solid 1px white;
+  border-radius: 30px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 20px 40px 20px 40px;
+}
+a:hover {
+  color: rgb(0, 15, 0);
+  font-weight: bold;
+  background-color: rgb(180, 237, 183);
+  padding: 20px 40px 20px 40px;
+  border-radius: 30px;
+}
+.router-link-active {
+  background-color: rgb(180, 237, 183);
+  color: rgb(0, 15, 0);
+  border-radius: 30px;
+  font-weight: bold;
 }
 </style>
