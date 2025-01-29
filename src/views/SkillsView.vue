@@ -42,7 +42,7 @@ export default {
       <h3 @mouseover="showImage = true" @mouseleave="showImage = false">Strapi</h3>
       <img
         v-show="showImage"
-        src="../assets/img/strapi.monogram.logo.png"
+        src="../assets/img/Strapi.monogram.logo.png"
         alt="Image au passage de la souris"
         class="image"
       />
