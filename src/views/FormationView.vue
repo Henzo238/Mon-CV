@@ -1,25 +1,19 @@
-<script setup>
-import { RouterLink, useRouter } from 'vue-router'
-const router = useRouter()
-</script>
-
 <template>
-  <h2>Formations & Diplômes</h2>
-  <section>
+  <main>
+    <h2 class="title">Formations & Diplômes</h2>
     <div class="formation">
       <div>
         <h3>Le Reacteur : Ecole en ligne</h3>
         <p>Obtention du titre RNCP de niveau 5 de développeur web et web mobile</p>
         <img src="../assets/img/logolereacteur.png" alt="" />
       </div>
-
       <div>
         <h3>Lycée Juliette Récamier</h3>
         <p>BTS Management des unités commerciales</p>
         <img src="../assets/img/Logo lycée JR.jpg" />
       </div>
     </div>
-  </section>
+  </main>
 </template>
 
 <style scoped>
@@ -47,11 +41,13 @@ img {
   background-color: rgb(0, 15, 0);
   box-shadow: 5px -5px 30px rgb(180, 237, 183);
   opacity: 0.7;
+  padding: 10px;
 }
 
-div {
-  /* border: 2px solid black; */
-  padding: 10px;
+h2 {
+  font-weight: bold;
+  /* margin-top: 60px; */
+  margin: 60px 0 60px 0;
 }
 h3 {
   font-weight: bold;

@@ -1,6 +1,6 @@
 <template>
-  <h2>Expériences professionnelles</h2>
-  <section>
+  <main>
+    <h2 class="title">Expériences professionnelles</h2>
     <div class="exp">
       <div>
         <h3>Community Manager, Bao Brunch</h3>
@@ -15,7 +15,7 @@
         <li>Traitement des réclamations client</li>
       </div>
     </div>
-  </section>
+  </main>
 </template>
 
 <style scoped>
@@ -40,6 +40,12 @@
 div {
   /* border: 2px solid black; */
   padding: 10px;
+}
+h2 {
+  font-weight: bold;
+  margin: 60px 0 60px 0;
+
+  /* margin-top: 60px; */
 }
 h3 {
   font-weight: bold;

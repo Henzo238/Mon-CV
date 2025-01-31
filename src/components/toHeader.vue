@@ -14,14 +14,12 @@
 
 <style scoped>
 header {
-  /* position: relative; */
   width: 60%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 nav {
-  /* padding: 20px 40px 20px 40px; */
   height: 60px;
   width: 950px;
   margin-top: 30px;
@@ -56,24 +54,4 @@ a:hover {
     display: none;
   }
 }
-/* @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  a {
-    padding: 10px 20px;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  nav {
-    padding: 5px 10px;
-  }
-  a {
-    padding: 5px 10px;
-  }
-} */
 </style>
