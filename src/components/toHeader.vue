@@ -14,9 +14,11 @@
 
 <style scoped>
 header {
-  position: sticky;
+  /* position: relative; */
   width: 60%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 nav {
   /* padding: 20px 40px 20px 40px; */
@@ -24,6 +26,7 @@ nav {
   width: 950px;
   margin-top: 30px;
   display: flex;
+
   flex-direction: row;
   justify-content: space-between;
   align-self: start;
@@ -48,4 +51,29 @@ a:hover {
   border-radius: 30px;
   font-weight: bold;
 }
+@media (max-width: 850px) {
+  header {
+    display: none;
+  }
+}
+/* @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  a {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 5px 10px;
+  }
+  a {
+    padding: 5px 10px;
+  }
+} */
 </style>

@@ -1,9 +1,4 @@
-<script setup>
-import Header from '@/components/toHeader.vue'
-// const handleClick = () => {
-//   window.scrollTo({ top: 1700, behavior: 'smooth' })
-// }
-</script>
+<script setup></script>
 
 <template>
   <div>
@@ -20,9 +15,9 @@ h2 {
   animation-duration: 2s;
   animation-name: slidein;
 }
-h2 {
+/* h2 {
   padding-bottom: 100px;
-}
+} */
 
 @keyframes slidein {
   from {
@@ -38,10 +33,7 @@ h2 {
   height: 170vh;
   background: linear-gradient(rgb(0, 15, 0) 70%, rgb(64, 117, 62));
 } */
-section {
-  position: sticky;
-  /* top: 0px; */
-}
+
 /* svg {
   color: rgb(180, 237, 183);
   border: 1px solid rgb(180, 237, 183);
@@ -60,4 +52,15 @@ span {
   align-items: center;
   justify-content: center;
 } */
+
+@media (max-width: 400px) {
+  @media (max-width: 480px) {
+    nav {
+      padding: 5px 10px;
+    }
+    a {
+      padding: 5px 10px;
+    }
+  }
+}
 </style>

@@ -1,12 +1,10 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { useRouter } from 'vue-router'
-const router = useRouter()
 </script>
 
 <template>
+  <h2>Me contacter</h2>
   <section>
-    <h2>Me contacter</h2>
     <div>
       <a href="https://www.linkedin.com/in/henzo-goncalves-444238270" target="_blank">
         <font-awesome-icon :icon="['fab', 'linkedin']" />
@@ -29,5 +27,13 @@ svg {
 a {
   text-decoration: none;
   color: inherit;
+}
+section {
+  height: 500px;
+}
+@media (max-width: 680px) {
+  svg {
+    display: flex;
+  }
 }
 </style>

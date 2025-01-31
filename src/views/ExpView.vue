@@ -1,6 +1,6 @@
 <template>
+  <h2>Expériences professionnelles</h2>
   <section>
-    <h2>Expériences professionnelles</h2>
     <div class="exp">
       <div>
         <h3>Community Manager, Bao Brunch</h3>
@@ -47,5 +47,14 @@ h3 {
 li {
   margin-top: 20px;
   display: flex;
+}
+@media (max-width: 680px) {
+  div {
+    flex-direction: column;
+    display: flex;
+  }
+  section {
+    height: 120vh;
+  }
 }
 </style>

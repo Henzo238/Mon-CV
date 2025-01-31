@@ -4,8 +4,8 @@ const router = useRouter()
 </script>
 
 <template>
+  <h2>Formations & Diplômes</h2>
   <section>
-    <h2>Formations & Diplômes</h2>
     <div class="formation">
       <div>
         <h3>Le Reacteur : Ecole en ligne</h3>
@@ -55,5 +55,14 @@ div {
 }
 h3 {
   font-weight: bold;
+}
+@media (max-width: 680px) {
+  div {
+    flex-direction: column;
+    display: flex;
+  }
+  section {
+    height: 120vh;
+  }
 }
 </style>

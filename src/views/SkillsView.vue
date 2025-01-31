@@ -1,6 +1,4 @@
 <script>
-import { RouterLink, useRouter } from 'vue-router'
-const router = useRouter()
 export default {
   data() {
     return {
@@ -11,9 +9,8 @@ export default {
 </script>
 
 <template>
+  <h2>Compétences</h2>
   <section>
-    <h2>Compétences</h2>
-
     <div class="skills">
       <h3 @mouseover="showImage = true" @mouseleave="showImage = false">JavaScript</h3>
       <img
