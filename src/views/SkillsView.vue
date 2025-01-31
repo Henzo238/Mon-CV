@@ -57,7 +57,7 @@ export default {
       <h3 @mouseover="setActiveSkill('strapi')" @mouseleave="clearActiveSkill">Strapi</h3>
       <img
         v-show="activeSkill === 'strapi'"
-        src="../assets/img/strapi.monogram.logo.png"
+        src="../assets/img/Strapi.monogram.logo.png"
         alt="Image au passage de la souris"
       />
     </div>
